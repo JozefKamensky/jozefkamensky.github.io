@@ -1,1 +1,1 @@
-# jozefkamensky.github.io
+simple webpage for WP
