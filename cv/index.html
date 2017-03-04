@@ -2,7 +2,57 @@
 layout: default
 title: Jozef Kamensky CV
 ---
-<div class="blurb">
-	<h1>Education</h1>
-	<p>STU FIIT 2014 - now</p>
-</div 
+<div class="resume-category">
+    <h2> {{ "personal informations" | upcase}} </h2>
+    <div class="resume-content">
+        <p> {{ site.name }} </p>
+        <p> {{ site.address }} </p>
+        <p> {{ site.phone }} </p>
+        <p> {{ site.birth_date }} </p>
+    </div>
+</div>
+
+<div class="resume-category">
+	<h2> {{ "education" | upcase}} </h2>
+    {% for edu in site.r-education %}
+        <div class="resume-content">
+            <p class="title"> {{ edu.name }} </p>
+			<p> {{ edu.duration }} </p>
+            <p> {{ edu.content }} </p>
+		</div>
+	{% endfor %}
+</div>
+
+<div class="resume-category">
+    <h2> {{ "work experience" | upcase}} </h2>
+    {% for exp in site.r-experience %}
+    <div class="resume-content">
+        <p class="title"> {{ exp.company }} </p>
+        <p> {{ exp.duration }} </p>
+        <p> {{ exp.position }} </p>
+        <p> {{ exp.content }} </p>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="resume-category">
+    <h2> {{ "computer skills - programmer" | upcase}} </h2>
+    {% assign skills = site.r-skills | sort: 'level' %}
+    {% for skill in skills reversed %}
+    <div class="resume-content">
+            <p><b>{{ skill.lang }}
+            {% case skill.level%}
+                {% when 1 %}
+                    </b> - beginner</p>
+                {% when 2 %}
+                    </b> - intermediate</p>
+                {% when 3 %}
+                    </b> - expert</p>
+            {% endcase %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="resume-category">
+    <h2></h2>
+</div>

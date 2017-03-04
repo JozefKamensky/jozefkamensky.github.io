@@ -1,3 +1,12 @@
-name: Jozef Kamensky, FIIT student
+name: Jozef Kamenský
+address: Lúčna 1764/12, 962 05 Hriňová
+phone: +421 944 283 756
+birth_date: 19/07/1995
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+position: FIIT student
+collections:
+  r-education:
+  r-experience:
+  r-skills:
+  r-languages:
