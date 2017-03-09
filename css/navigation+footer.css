@@ -2,7 +2,6 @@ header,
 footer {
     background: #1960e5;
     color: white;
-    border-radius: 5px;
 }
 
 header ul{
@@ -17,14 +16,13 @@ footer ul{
 header li,
 footer li{
     display: inline-block;
-    padding-right: 10px;
+    padding-right: 0;
 }
 header a,
 footer a{
     text-decoration: none;
     color: inherit;
-    padding-left: 7px;
-    font-weight: bold;
+    padding: 0 10px;
     font-size: larger;
 }
 

@@ -2,82 +2,84 @@
 layout: default
 title: Jozef Kamensky CV
 ---
-<div class="resume-category">
-    <h2> {{ "personal informations" | upcase}} </h2>
-    <div class="resume-content">
-        <p> {{ site.name }} </p>
-        <p> {{ site.address }} </p>
-        <p> {{ site.phone }} </p>
-        <p> {{ site.birth_date }} </p>
-    </div>
-</div>
-
-<div class="resume-category">
-	<h2> {{ "education" | upcase}} </h2>
-    {% for edu in site.r-education %}
+<div class="container">
+    <div class="resume-category">
+        <h2> {{ "personal informations" | upcase}} </h2>
         <div class="resume-content">
-            <p class="title"> {{ edu.name }} </p>
-			<p> {{ edu.duration }} </p>
-            <p> {{ edu.content }} </p>
-		</div>
-	{% endfor %}
-</div>
-
-<div class="resume-category">
-    <h2> {{ "work experience" | upcase}} </h2>
-    {% for exp in site.r-experience %}
-    <div class="resume-content">
-        <p class="title"> {{ exp.company }} </p>
-        <p> {{ exp.duration }} </p>
-        <p> {{ exp.position }} </p>
-        <p> {{ exp.content }} </p>
+            <p> {{ site.name }} </p>
+            <p> {{ site.address }} </p>
+            <p> {{ site.phone }} </p>
+            <p> {{ site.birth_date }} </p>
+        </div>
     </div>
-    {% endfor %}
-</div>
 
-<div class="resume-category">
-    <h2> {{ "language skills" | upcase }} </h2>
-    {% assign langs = site.r-languages | sort: 'level' | reverse %}
-    {% for lang in langs %}
-    <div class="resume-content">
-        <p> <b> {{ lang.name }} </b>
-            {% case lang.level %}
-                {% when 'A1' %}
-                    - Beginner
-                {% when 'A2' %}
-                    - intermediate
-                {% when 'B1' %}
-                    - Intermediate
-                {% when 'B2' %}
-                    - Upper intermediate
-                {% when 'C1' %}
-                    - intermediate
-                {% when 'C2' %}
-                    - Proficiency
-            {% endcase %}
-            </p>
+    <div class="resume-category">
+        <h2> {{ "education" | upcase}} </h2>
+        {% for edu in site.r-education %}
+            <div class="resume-content">
+                <p class="title"> {{ edu.name }} </p>
+                <p> {{ edu.duration }} </p>
+                <p> {{ edu.content }} </p>
+            </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 
-<div class="resume-category">
-    <h2> {{ "computer skills - programmer" | upcase}} </h2>
-    {% assign skills = site.r-skills | sort: 'level' %}
-    {% for skill in skills reversed %}
-    <div class="resume-content">
-            <p><b>{{ skill.lang }} </b>
-            {% case skill.level %}
-                {% when 1 %}
-                    - beginner</p>
-                {% when 2 %}
-                    - intermediate</p>
-                {% when 3 %}
-                    - expert</p>
-            {% endcase %}
+    <div class="resume-category">
+        <h2> {{ "work experience" | upcase}} </h2>
+        {% for exp in site.r-experience %}
+        <div class="resume-content">
+            <p class="title"> {{ exp.company }} </p>
+            <p> {{ exp.duration }} </p>
+            <p> {{ exp.position }} </p>
+            <p> {{ exp.content }} </p>
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 
-<div class="resume-category">
-    <h2></h2>
+    <div class="resume-category">
+        <h2> {{ "language skills" | upcase }} </h2>
+        {% assign langs = site.r-languages | sort: 'level' | reverse %}
+        {% for lang in langs %}
+        <div class="resume-content">
+            <p> <b> {{ lang.name }} </b>
+                {% case lang.level %}
+                    {% when 'A1' %}
+                        - Beginner
+                    {% when 'A2' %}
+                        - intermediate
+                    {% when 'B1' %}
+                        - Intermediate
+                    {% when 'B2' %}
+                        - Upper intermediate
+                    {% when 'C1' %}
+                        - intermediate
+                    {% when 'C2' %}
+                        - Proficiency
+                {% endcase %}
+                </p>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="resume-category">
+        <h2> {{ "computer skills - programmer" | upcase}} </h2>
+        {% assign skills = site.r-skills | sort: 'level' %}
+        {% for skill in skills reversed %}
+        <div class="resume-content">
+                <p><b>{{ skill.lang }} </b>
+                {% case skill.level %}
+                    {% when 1 %}
+                        - beginner</p>
+                    {% when 2 %}
+                        - intermediate</p>
+                    {% when 3 %}
+                        - expert</p>
+                {% endcase %}
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="resume-category">
+        <h2></h2>
+    </div>
 </div>

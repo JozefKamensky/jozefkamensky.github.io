@@ -1,7 +1,15 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 0 auto;
+    width: 100%;
     font-family: 'Sans-Serif';
+}
+
+section.hero {
+    color: #fff;
+    background-image: url('/images/bg.jpg');
+    background-size: cover;
+    padding: 120px 0;
+    width: 100%;
 }
 
 a {
@@ -11,10 +19,16 @@ a {
 h1 {
     font-size: 3em;
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 ul.posts { 
@@ -26,7 +40,8 @@ ul.posts li {
     list-style: none;
 }
 
-div.container{
+div.container,
+div.small-container {
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -40,6 +55,11 @@ div.container:after {
     display: table;
     clear: both;
 }
+
+div.small-container {
+    max-width: 700px;
+}
+
 .resume-category {
     margin: 20px 0 20px 0;
 }
@@ -59,3 +79,61 @@ div.container:after {
     font-weight: bold;
     font-size: large;
 }
+.photos{
+    margin: 40px 0 0 0;
+}
+.photo{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 30px;
+}
+.photo p {
+    font-size: 1em;
+}
+
+.post {
+    margin: 40px 0 0 0;
+}
+
+.post .intro,.meta {
+    padding: 0 0 0 15px;
+    font-style: italic;
+}
+
+.post .content {
+
+}
+
+.columns{
+    margin: 20px 0 0 0;
+    border-bottom: solid grey thin;
+}
+
+.columns:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.spacing{
+    padding: 20px 0 0 0;
+}
+
+.column {
+    box-sizing: border-box;
+    float: left;
+    padding: 0 20px;
+}
+
+.third{
+    width: 33%;
+}
+
+.twoThirds{
+    width: 66%;
+}
+
+
+
+
