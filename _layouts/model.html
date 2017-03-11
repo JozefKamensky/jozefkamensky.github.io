@@ -1,0 +1,40 @@
+---
+layout: page
+---
+<div class="post">
+    <div class="columns">
+        <div class="column half">
+            <p><b>Name: </b>{{ page.name }}</p>
+            <p><b>Category: </b>{{ page.category }}</p>
+            <p><b>Manufacturer: </b>{{ page.manufacturer }}</p>
+            <p><b>Required Skill: </b>{{ page.skill }}</p>
+            <p><b>Scale: </b>{{ page.scale }}</p>
+            <p><b>Number of Pieces: </b>{{ page.pieces }}</p>
+            <p><b>Required Colors: </b></p>
+            <ul>
+            {% for color in page.colors %}
+                {% assign description = site.humbrol_colors[color] %}
+                <li> {{color}} - {{description}}</li>
+            {% endfor %}
+            </ul>
+            <!-- for -->
+            <p><b>Suggested Improvements: </b></p>
+            <ul>
+            {% for sugg in page.suggestions %}
+                <li> {{sugg}} </li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="column half">
+            <img src={{page.image_path}}/>
+        </div>
+    </div>
+    <div class="columns">
+        <h2> Photo gallery: </h2>
+        {% for image in page.images %}
+        <div class="column half">
+            <img src="{{image}}"/>
+        </div>
+        {% endfor %}
+    </div>
+</div>

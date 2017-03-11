@@ -6,16 +6,18 @@ title: Personal Informations
 <div class="container">
 	<div class="resume-category">
 		<h2> {{ "Modelarstvo" | upcase }} </h2>
-		{% for hobby in site.hobbies %}
-		<div class="columns spacing">
-			<div class="column third">
-				<img src="{{hobby.image_path}}">
+		{% for model in site.hobbies %}
+		<a href="{{model.url}}">
+			<div class="columns spacing">
+				<div class="column third">
+					<img src="{{model.image_path}}">
+				</div>
+				<div class="column twoThirds">
+					<h3> {{model.name}} </h3>
+					<p> {{model.content}} </p>
+				</div>
 			</div>
-			<div class="column twoThirds">
-				<h3> {{hobby.name}} </h3>
-				<p> {{hobby.content}} </p>
-			</div>
-		</div>
+		</a>
 		{% endfor %}
 	</div>
 </div>

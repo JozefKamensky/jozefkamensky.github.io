@@ -1,12 +1,12 @@
 body {
     margin: 0 auto;
     width: 100%;
-    font-family: 'Sans-Serif';
+    font-family: 'Helvetica','Sans-Serif';
 }
 
 section.hero {
     color: #fff;
-    background-image: url('/images/bg.jpg');
+    background-image: url('/images/heroShip.jpg');
     background-size: cover;
     padding: 120px 0;
     width: 100%;
@@ -17,12 +17,12 @@ a {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 p {
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1.0em;
+    line-height: 1.2em;
     color: #333;
 }
 
@@ -106,8 +106,9 @@ div.small-container {
 }
 
 .columns{
-    margin: 20px 0 0 0;
-    border-bottom: solid grey thin;
+    margin: 10px 0 0 0;
+    border-bottom: solid #c9d6e8 medium;
+
 }
 
 .columns:after{
@@ -123,7 +124,7 @@ div.small-container {
 .column {
     box-sizing: border-box;
     float: left;
-    padding: 0 20px;
+    padding: 0 20px 20px 0;
 }
 
 .third{
@@ -132,6 +133,10 @@ div.small-container {
 
 .twoThirds{
     width: 66%;
+}
+
+.half{
+    width: 50%;
 }
 
 

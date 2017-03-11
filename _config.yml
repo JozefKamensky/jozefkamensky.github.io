@@ -3,11 +3,200 @@ address: Lúčna 1764/12, 962 05 Hriňová
 phone: +421 944 283 756
 birth_date: 19/07/1995
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
 position: FIIT student
+gems: [jekyll_github_sample]
 collections:
   r-education:
   r-experience:
   r-skills:
   r-languages:
   hobbies:
+    output: true
+humbrol_colors:
+  "1": Matt Primer
+  "2": Emerald Green
+  "3": Brunswick Green
+  "5": Dark Admirality Grey
+  "7": Light Buff
+  "9": Tan
+  "10": Service Brown
+  "11": Silver
+  "12": Copper
+  "14": French blue
+  "15": Midnight Blue
+  "16": Gold
+  "18": Orange
+  "19": Bright red
+  "20": Crimson
+  "21": Gloss Black
+  "22": Gloss White
+  "23": Duck egg blue
+  "24": Trainer yellow
+  "25": Blue
+  "26": Khaki
+  "27": Sea Grey
+  "28": Camouflage Grey
+  "29": Dark Earth
+  "30": Dark Green
+  "31": Slate Grey
+  "32": Dark grey
+  "33": Black
+  "34": Flat White
+  "35": Clear
+  "38": Lime
+  "40": Pale Grey
+  "41": Ivory
+  "47": Sea Blue
+  "48": Mediterranian blue
+  "49": Matt varnish
+  "50": Green mist
+  "51": Sunset Red
+  "52": Baltic Blue
+  "53": Gunmetal
+  "54": Brass
+  "55": Bronze
+  "56": Aluminium
+  "60": Matt Scarlet
+  "61": Matt Flesh
+  "62": Leather
+  "63": Sand
+  "64": Light grey
+  "65": Aircraft Blue
+  "66": Matt Olive Drab
+  "67": Matt Tank Grey
+  "68": Purple
+  "69": Yellow
+  "70": Brick Red
+  "71": Oak
+  "72": Khaki Drill
+  "73": Wine
+  "74": Linen
+  "75": Matt Bronze Green
+  "76": Uniform Green
+  "77": Matt Navy Blue
+  "78": Cockpit Green
+  "79": Blue Grey
+  "80": Grass Green
+  "81": Pale yellow
+  "82": Orange Lining
+  "83": Ochre
+  "84": Matt Mid Stone
+  "85": Coal Black
+  "86": Light Olive
+  "87": Steel grey
+  "88": Deck Green
+  "89": Middle Blue
+  "90": Beige Green
+  "91": Matt Black Green
+  "92": Matt Iron Grey
+  "93": Desert Yellow
+  "94": Brown Yellow
+  "95": Concrete
+  "96": RAF Blue
+  "97": EggShell
+  "98": Chocolate
+  "99": Lemon Yellow
+  "100": Red Brown
+  "101": Mid Green
+  "102": Army Green
+  "103": Cream
+  "104": Matt Oxford Blue
+  "105": Marine Green
+  "106": Ocean Grey
+  "107": WW1 Purple
+  "108": WW1 Green
+  "109": WW1 Blue
+  "110": Matt Natural Wood
+  "111": Matt Uniform Grey
+  "112": Tarmac
+  "113": Matt Rust
+  "114": Russian Green
+  "115": Russian Blue
+  "116": Matt US Dark Green
+  "117": US Light Green
+  "118": US Tan
+  "119": Israeli Light Earth
+  "120": Israeli Light Green
+  "121": Israeli Pale Stone
+  "122": Israeli Light Blue
+  "123": Dark Sea Grey
+  "124": Petrol Blue
+  "125": Satin US Dark Grey
+  "126": Satin US Medium Grey
+  "127": US Ghost Grey
+  "128": US Compass Grey
+  "129": US Gull Grey
+  "130": Satin White
+  "131": Satin Green
+  "132": Satin Red
+  "133": Satin Brown
+  "134": Satin Blue
+  "135": Satin varnish
+  "140": Dk Gull Grey
+  "141": Light Sea Grey
+  "142": Field Drab
+  "144": Intermediate Blue
+  "145": Medium Grey
+  "146": Aircraft Grey
+  "147": Matt Light Grey
+  "148": Radome Tan
+  "149": Dark Green
+  "150": Forest Green
+  "151": Interior Green
+  "153": Insignia Red
+  "154": Insignia Yellow
+  "155": Olive Drab
+  "156": Satin Dark Grey
+  "157": Azure Blue
+  "158": Interior Green
+  "159": Khaki Drab
+  "160": German Camouflage Red Brown
+  "161": US Marine Corps Green
+  "162": Surface grey
+  "163": Dark Green
+  "164": Dark Sea Grey
+  "165": Medium Sea Grey
+  "166": RAF Light Aircraft Grey
+  "167": RAF Barley Grey
+  "168": RAF Hemp
+  "170": Brown Bess
+  "171": Antique Bronze
+  "172": Green
+  "173": Track Colour
+  "174": Signal Red
+  "175": Hellgrau RLM 76
+  "176": Neutral Grey Light Grey
+  "177": Hull Red
+  "178": British Scarlet
+  "179": French Artillery Green
+  "180": Red Leather
+  "181": Sea blue
+  "182": Black Grey
+  "183": Grey
+  "184": Freigh Stock Grey
+  "186": Brown
+  "187": Sand
+  "188": Crome Yellow
+  "189": Insignia blue
+  "190": Blue Angels blue
+  "191": Chrome Silver
+  "192": Blaze Matt
+  "193": Blaze Gloss
+  "194": Saturn Yellow Gloss
+  "195": Dark Green
+  "196": Light Grey
+  "197": Lufthansa Yellow
+  "198": Lufthansa Blue
+  "200": Pink
+  "201": Metallic Black
+  "202": Fluoroscent Aurora Pink
+  "203": Fluoroscent Signal Green
+  "204": Fluoroscent Matt Saturn Yellow
+  "205": Fluoroscent Matt Fire Orange
+  "206": Base White (with the flouroscents)
+  "207": Aurora Pink
+  "208": Signal Green
+  "209": Fire Orange
+  "220": Ferrari Red
+  "221": Garter Blue
+  "250": Desert Pink
