@@ -1,0 +1,22 @@
+---
+layout: page
+---
+<div class="resume-category">
+    <h2> {{page.name}} </h2>
+    <div class="resume-content">
+        <p> <b>Zadanie:</b> {{page.text}} </p>
+        <p> <b>Použité technológie:</b></p>
+        <ul>
+            {% for tech in page.technologies %}
+            <li>{{tech}}</li>
+            {% endfor %}
+        </ul>
+        <p> <b>Požiadavky:</b></p>
+        <ul>
+            {% for req in page.requirements %}
+            <li>{{req}}</li>
+            {% endfor %}
+        </ul>
+        {% include {{ page.link_to_file }} %}
+    </div>
+</div>

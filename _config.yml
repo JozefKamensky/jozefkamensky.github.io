@@ -12,6 +12,8 @@ collections:
   r-languages:
   hobbies:
     output: true
+  projects:
+    output: true
 humbrol_colors:
   "1": Matt Primer
   "2": Emerald Green

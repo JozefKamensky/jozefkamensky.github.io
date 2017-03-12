@@ -2,10 +2,12 @@
 layout: page
 title: Personal Informations
 ---
-<h2>My hobbies:</h2>
+
 <div class="container">
+	<p> This page is about how i spend my free time and what i like to do.</p>
+	<h2>My hobbies:</h2>
 	<div class="resume-category">
-		<h2> {{ "Modelarstvo" | upcase }} </h2>
+		<h2> {{ "Plastic models" | upcase }} </h2>
 		{% for model in site.hobbies %}
 		<a href="{{model.url}}">
 			<div class="columns spacing">

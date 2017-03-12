@@ -1,0 +1,7 @@
+---
+layout: page
+title: Web Publishing
+---
+{% for project in site.projects %}
+<a href="{{project.url}}"> {{project.title}} - {{project.name}} </a>
+{% endfor %}

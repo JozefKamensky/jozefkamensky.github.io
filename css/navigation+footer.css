@@ -4,13 +4,17 @@ footer {
     color: white;
 }
 
-header ul{
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+header ul,
+footer ul{
     list-style: none ;
     float: right;
-}
-footer ul{
-    list-style: none;
-    float: left;
 }
 
 header li,
@@ -22,8 +26,13 @@ header a,
 footer a{
     text-decoration: none;
     color: inherit;
-    padding: 0 10px;
+    padding: 0 20px 0 10px;
     font-size: larger;
+    font-weight: bold;
+}
+
+header a{
+    border-left: solid thick;
 }
 
 

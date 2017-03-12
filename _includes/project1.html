@@ -1,0 +1,51 @@
+<p><b>Layouty: </b></p>
+<ul>
+    <li> <p> <i>page.html</i> - základný layout pre stránku, ďalšie layouty ho rozširujú</p> </li>
+    <li> <p> <i>model.html</i> - layout pre jednotlivé plastové modely, ktoré staviam ho voľnom čase</p> </li>
+    <li> <p> <i>post.html</i> - layout pre príspevok blogu</p> </li>
+    <li> <p> <i>project.html</i> - layout pre zadanie</p> </li>
+</ul>
+
+<p><b>Kolekcie: </b></p>
+<ul>
+    <li> <p> <i> Životopis </i> - pri tvorbe CV som využil 4 kolekcie: </p>
+        <ul>
+            <li> <p> <i>r-education</i> - dosiahnuté vzdelanie, kurzy ...</p> </li>
+            <li> <p> <i>r-experience</i> - pracovné skúsenosti</p> </li>
+            <li> <p> <i>r-skills</i> - technické zručnosti, programovacie jazyky ...</p> </li>
+            <li> <p> <i>r-languages</i> - cudzie jazyky </p> </li>
+        </ul>
+    </li>
+    <li> <p> <i>hobbies</i> - hobby, záľuby, trávenie voľného času </p> </li>
+    <li> <p> <i>projects</i> - zadania z predmetu WP </p> </li>
+</ul>
+
+<p><b>Premenné: </b></p>
+<p>V projekte využívam všetky druhy premenných.</p>
+<ul>
+    <li> <p> <i>Site</i> - pri prístupe ku kolekciám </p> </li>
+    <li> <p> <i>Page</i> - pri generovaní stránok </p> </li>
+    <li> <p> <i>Ostatné</i> - pri vyberaní dát z dátových súborov (napr. CV) </p> </li>
+</ul>
+
+<p><b>Dátové súbory: </b></p>
+<p>Dátové súbory využívam pri tvorbe blogu alebo pri tvorbe detailu plastových modelov(sekcia About a následne vybrať niektorý model).
+<i>Príklad dátového súboru (_hobbies/hind.md):</i></p>
+{% highlight markdown lineos %}
+{% remote_file_content https://raw.githubusercontent.com/JozefKamensky/jozefkamensky.github.io/master/_hobbies/hind.md %}
+{% endhighlight %}
+
+<p><b>Filtre / Tagy: </b></p>
+<ul>
+    <li> <p> <i>Upcase</i> - string filter </p> </li>
+    <li> <p> <i>Sort</i> - pri zoraďovaní v rámci CV </p> </li>
+    <li> <p> <i>Date to String</i> - pri blogu </p> </li>
+    <li> <p> <i>Smartify</i> - pri blogu na dosiahnutie oblých úvodzoviek</p> </li>
+    <li> <p> <i>Include</i> - include headera a footra do layoutu </p> </li>
+</ul>
+
+<p><b>Pluginy: </b></p>
+<ul>
+    <li> <p> <i>Fetch remote file content</i> - plugin na zobrazenie kódu z GitHubu</p> </li>
+    <li> <p> <i>Jekyll Video Embed</i> - plugin na zobrazenie videa (napr. z YouTube) na stránke</p> </li>
+</ul>
