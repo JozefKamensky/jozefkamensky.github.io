@@ -2,6 +2,9 @@
 layout: page
 title: Web Publishing
 ---
-{% for project in site.projects %}
-<a href="{{project.url}}"> {{project.title}} - {{project.name}} </a>
-{% endfor %}
+<h2> Zadania: </h2>
+<ul style="list-style-image: none">
+    {% for project in site.projects %}
+    <li><a href="{{project.url}}"> {{project.title}} - {{project.name}} </a></li>
+    {% endfor %}
+</ul>

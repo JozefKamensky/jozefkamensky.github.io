@@ -1,25 +1,41 @@
 ---
 layout: page
-title: Personal Informations
+title: About
 ---
-
-<div class="container">
-	<p> This page is about how i spend my free time and what i like to do.</p>
-	<h2>My hobbies:</h2>
-	<div class="resume-category">
-		<h2> {{ "Plastic models" | upcase }} </h2>
-		{% for model in site.hobbies %}
-		<a href="{{model.url}}">
-			<div class="columns spacing">
-				<div class="column third">
-					<img src="{{model.image_path}}">
-				</div>
-				<div class="column twoThirds">
-					<h3> {{model.name}} </h3>
-					<p> {{model.content}} </p>
-				</div>
+<p> This page is about how i spend my free time and what i like to do.</p>
+<h2>My hobbies:</h2>
+<div class="resume-category">
+	<h2> {{ "Plastic models" | upcase }} </h2>
+	{% for model in site.hobbies %}
+	<a href="{{model.url}}">
+		<div class="columns spacing">
+			<div class="column third">
+				<img src="{{model.image_path}}">
 			</div>
-		</a>
-		{% endfor %}
-	</div>
+			<div class="column twoThirds">
+				<h3> {{model.name}} </h3>
+				<p> {{model.content}} </p>
+			</div>
+		</div>
+	</a>
+	{% endfor %}
 </div>
+
+<div class="resume-category">
+	<h2> {{ "Favourite books" | upcase }} </h2>
+	{% assign books = site.books | sort: 'number' %}
+	{% for book in books %}
+	<a href="{{book.url}}">
+		<div class="columns spacing">
+			<div class="column third">
+				<img src="{{book.image}}">
+			</div>
+			<div class="column twoThirds">
+				<h3> {{book.name}} </h3>
+				<p> {{book.content}} </p>
+			</div>
+		</div>
+	</a>
+	{% endfor %}
+</div>
+

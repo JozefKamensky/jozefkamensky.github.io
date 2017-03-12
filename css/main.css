@@ -4,13 +4,23 @@ body {
     font-family: 'Helvetica','Sans-Serif';
 }
 
-section.hero {
-    color: #fff;
-    background-image: url('/images/heroShip.jpg');
+.bg {
+    background-image: url('/images/bg.jpg');
     background-size: cover;
-    padding: 120px 0;
-    width: 100%;
+    color: white;
 }
+
+.bg h2{
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+}
+.bg h3{
+    padding-top: 25%;
+    font-size: 1.5em;
+    text-align: right;
+}
+
 
 a {
     text-decoration: none;
@@ -22,7 +32,7 @@ h1 {
 
 p {
     font-size: 1.0em;
-    line-height: 1.2em;
+    line-height: 1.1em;
     color: #333;
 }
 
@@ -71,7 +81,7 @@ div.small-container {
     margin: 6px 0 0 40px;
 }
 .resume-content p,.title {
-    padding: 10px 0 0 0;
+    padding: 5px 0 0 0;
     margin: 0;
     font-size: medium;
 }
@@ -94,15 +104,6 @@ div.small-container {
 
 .post {
     margin: 30px 0 0 20px;
-}
-
-.post .intro,.meta {
-    padding: 0 0 0 15px;
-    font-style: italic;
-}
-
-.post .content {
-
 }
 
 .columns{
