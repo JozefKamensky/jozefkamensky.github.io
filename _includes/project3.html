@@ -1,0 +1,24 @@
+<p> Na definovanie elementov som použil XML Schemu. Základné elementy a ich opis:
+<ul>
+    <li><b>prezentacia</b> - koreňový element ktorý obshauje elemetny meta a snimok</li>
+    <li><b>meta</b> - element ktory obsahuje metadáta (autor) a nastavenia(číslovanie strán)</li>
+    <li><b>snimok</b> - element reprezentujúci snímok prezentácie, skladá sa z nadpisu, podnadpisu a obsahu</li>
+    <li><b>obsah</b> - element obsahujúci obsah daného snímku, číslo za ním, napr. obsah100, označuje šírku v percentách</li>
+    <li><b>obrazovyObsah</b> - element reprezentujuci obrazovy obsah, obsahue atribut zdroj - URI zdroja</li>
+    <li><b>textovyObsah</b> - element reprezentujúci textový obsah, obsahuje prvky text, zoznam alebo link</li>
+    <li><b>text</b> - element so samotným textom, ktorý môže byť doplnený o tagy zvýrazňujúce text - tučné. kurzíva a podčiarknutie.
+        Tiež je možné pomocou atribútov velkost a farbaHEX nastaviť veľkosť, resp. farbu</li>
+    <li><b>zoznam</b> - element pre zoznamy (podľa atribútu číslované alebo nie), skladá sa z položiek alebo ďalších zoznamov </li>
+    <li><b>položka</b> - element položka v sebe obsahuje <i>textovyObsah</i></li>
+    <li><b>link</b> - element pre zobrazenie odkazov, napr. na internetové stránky</li>
+</ul>
+</p>
+
+<p>
+    Farba textu na zadáva v HEXa formáte a kontroluje sa regexom "^#[A-Fa-f0-9]{6}$", ktorý zabezpečuje že
+    bude obsahovať len povolené znaky a bude správnej dĺžky.
+</p>
+
+<p>
+
+</p>
